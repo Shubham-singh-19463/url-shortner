@@ -16,6 +16,9 @@ from fastapi.middleware.cors import CORSMiddleware
 load_dotenv()
 DATABASE_URL = os.getenv("DATABASE_URL")
 
+if not DATABASE_URL:
+    raise RuntimeError("DATABASE_URL is not configured")
+
 # connection to postgresql database student_db
 engine = create_engine(DATABASE_URL)
 
