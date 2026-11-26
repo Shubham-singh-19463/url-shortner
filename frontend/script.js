@@ -7,7 +7,7 @@ var short_url_input = document.getElementById("short-url");
 var copy_btn = document.getElementById("copy-btn");
 var copy_message = document.getElementById("copy-message");
 
-const API_BASE_URL = "http://127.0.0.1:8000";
+const API_BASE_URL = "https://url-shortner-2pdj.onrender.com";
 short_btn.addEventListener("click", async function() {
 
     var url = origin_url.value.trim();
