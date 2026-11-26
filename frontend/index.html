@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+    <title>Purify URL - Free URL Shortener</title>
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <nav>
+      <h2>Purify<span>URL</span></h2>
+    </nav>
+
+    <!-- Hero Section -->
+
+    <main>
+      <div class="container">
+        <span class="tag">Simple. Fast. Clean.</span>
+
+        <h1>
+          Shorten Links,
+          <span>Simplify Sharing.</span>
+        </h1>
+
+        <p>Transform your long URLs into short, clean and shareable links.</p>
+
+        <div class="url-box">
+          <input
+            type="url"
+            id="original-url"
+            placeholder="Paste your long URL here..."
+          />
+          <button type="button" id="shorten-btn">Shorten URL</button>
+        </div>
+
+
+        <!-- show result -->
+        <div class="result-card" id="result-card">
+          <h3>Your Short URL is Ready!</h3>
+          <p>Your long link has been shortened successfully.</p>
+
+          <div class="result-box">
+            <input type="text" id="short-url" readonly />
+
+            <button id="copy-btn" type="button">Copy Link</button>
+          </div>
+
+          <span id="copy-message"></span>
+        </div>
+
+
+      </div>
+    </main>
+
+    <!-- About Section -->
+
+    <section class="about">
+      <h2>What is <span>Purify URL?</span></h2>
+
+      <p>
+        Purify URL is a simple URL shortener that transforms long and
+        complicated links into short and shareable URLs. Just paste your link,
+        click shorten, and you're ready to share it anywhere.
+      </p>
+    </section>
+
+    <!-- Features Section -->
+
+    <section class="features">
+      <h2>Why Purify URL?</h2>
+
+      <div class="feature-container">
+        <div class="feature-card">
+          <h3>🔗 Short Links</h3>
+          <p>Convert long URLs into short and clean links.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>📤 Easy Sharing</h3>
+          <p>Share your links easily with anyone.</p>
+        </div>
+
+        <div class="feature-card">
+          <h3>⚡ Simple & Fast</h3>
+          <p>No complicated steps. Just paste and shorten.</p>
+        </div>
+      </div>
+    </section>
+
+    <footer>
+      <p>© 2026 Purify URL. All rights reserved.</p>
+    </footer>
+  </body>
+</html>
